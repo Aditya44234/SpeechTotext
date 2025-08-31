@@ -1,12 +1,58 @@
-# React + Vite
+# Speech to Text Generator React App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and user-friendly React application that converts spoken words into text in real time using the browser's Web Speech API. Supports Marathi language recognition and features a typing animation effect for displaying transcribed text.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Real-time speech-to-text conversion.
+- Supports Marathi (`mr-IN`) language input.
+- Typing animation effect to display transcribed text character by character.
+- Copy transcribed text to clipboard with feedback.
+- Start and stop speech recognition easily.
+- Modern responsive UI with accessibility considerations.
 
-## Expanding the ESLint configuration
+## Demo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+![App Screenshot](screenshot.png)  <!-- Replace with your screenshot path -->
+
+## Installation
+
+1. Clone the repository:
+
+git clone https://github.com/Aditya44234/SpeechTotext.git
+cd SpeechTotext
+
+
+
+2. Install dependencies:
+
+
+3. Run the app locally:
+
+
+The app will be available at `http://localhost:3000`.
+
+## Usage
+
+- Click **Start Listening** and speak in Marathi.
+- Your speech will be transcribed in real time with a typing effect.
+- Click **Stop Listening** to end speech recognition.
+- Click **Copy** to copy the transcribed text to clipboard.
+
+## Technologies Used
+
+- React
+- react-speech-recognition (Web Speech API wrapper)
+- CSS for styling
+
+## Contributing
+
+Contributions are welcome! Feel free to submit a pull request or open an issue.
+
+## License
+
+This project is licensed under the MIT License.
+
+---
+
+© 2025 Aditya Joshi

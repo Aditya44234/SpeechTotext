@@ -26,6 +26,13 @@ function App() {
     }
   };
 
+  // Clear button resets transcript and displayed text
+  const clear = () => {
+    SpeechRecognition.resetTranscript(); // clear internal transcript
+    setDisplayText("");                   // clear displayed text
+    setIndex(0);                         // reset typing animation index
+  };
+
   const { transcript, browserSupportsSpeechRecognition } = useSpeechRecognition();
 
   // Typing effect: reveal transcript text one character at a time
@@ -34,7 +41,7 @@ function App() {
       const timeout = setTimeout(() => {
         setDisplayText((prev) => prev + transcript.charAt(index));
         setIndex(index + 1);
-      }, 40); // typing speed in ms, adjust if needed
+      }, 40); // typing speed in milliseconds, adjust as needed
 
       return () => clearTimeout(timeout);
     } else if (index > transcript.length) {
@@ -69,6 +76,7 @@ function App() {
           </button>
           <button onClick={startListening}>Start listening</button>
           <button onClick={stopListening}>Stop listening</button>
+          <button onClick={clear}>Clear</button> {/* Clear button added here */}
         </div>
       </div>
     </div>
