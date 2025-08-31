@@ -1,0 +1,100 @@
+body {
+  margin: 0; 
+  padding: 0;
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #4e54c8, #8f94fb);
+  color: #1e1e2f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 420px;
+  padding: 40px 38px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  backdrop-filter: blur(16px);
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.3);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 48px rgba(31, 38, 135, 0.5);
+}
+
+h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #f5f5f7;
+  margin-bottom: 18px;
+  letter-spacing: -0.04em;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+p {
+  font-size: 1.15rem;
+  color: #d3d3e2;
+  margin-bottom: 32px;
+  line-height: 1.5;
+}
+
+.main-content {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 22px 26px;
+  border-radius: 16px;
+  color: #1e1e2f;
+  font-size: 1.2rem;
+  min-height: 140px;
+  box-shadow:
+    inset 4px 4px 8px rgba(255, 255, 255, 0.25),
+    inset -4px -4px 8px rgba(0, 0, 0, 0.1);
+  overflow-wrap: break-word;
+  user-select: text;
+  text-align: left;
+  margin-bottom: 38px;
+  white-space: pre-wrap;
+  transition: background 0.3s ease;
+}
+
+.btn-style {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn-style button {
+  background: linear-gradient(135deg, #7a8de8, #5a6ac9);
+  border: none;
+  border-radius: 14px;
+  padding: 14px 32px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #f5f5f7;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(122, 141, 232, 0.6);
+  transition: all 0.3s ease;
+  user-select: none;
+  min-width: 130px;
+}
+
+.btn-style button:hover:not(:disabled) {
+  background: linear-gradient(135deg, #5c62df, #434ab6);
+  box-shadow: 0 12px 26px rgba(88, 98, 223, 0.8);
+  transform: translateY(-4px);
+}
+
+.btn-style button:disabled {
+  background: #acaede;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.btn-style button.copied {
+  background: linear-gradient(135deg, #4ade80, #22c55e);
+  box-shadow: 0 8px 20px rgba(34, 197, 94, 0.7);
+}
