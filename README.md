@@ -5,7 +5,7 @@ A simple and user-friendly React application that converts spoken words into tex
 ## Features
 
 - Real-time speech-to-text conversion.
-- Supports Marathi (`mr-IN`) language input.
+- Supports Marathi (`en-IN`) language input.
 - Typing animation effect to display transcribed text character by character.
 - Copy transcribed text to clipboard with feedback.
 - Start and stop speech recognition easily.
