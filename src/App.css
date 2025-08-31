@@ -98,3 +98,75 @@ p {
   background: linear-gradient(135deg, #4ade80, #22c55e);
   box-shadow: 0 8px 20px rgba(34, 197, 94, 0.7);
 }
+
+
+
+/* Responsiveness */
+
+
+/* Existing styles remain unchanged... */
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 30px 24px;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  p {
+    font-size: 1rem;
+    margin-bottom: 24px;
+  }
+
+  .main-content {
+    font-size: 1.1rem;
+    padding: 18px 20px;
+  }
+
+  .btn-style {
+    gap: 14px;
+  }
+
+  .btn-style button {
+    padding: 12px 24px;
+    font-size: 1rem;
+    min-width: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 95%;
+    padding: 24px 18px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+  }
+
+  .main-content {
+    font-size: 1rem;
+    min-height: 120px;
+    padding: 14px 16px;
+  }
+
+  .btn-style {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .btn-style button {
+    width: 100%; /* full width buttons on small screens */
+    padding: 12px 0;
+    font-size: 1rem;
+  }
+}
